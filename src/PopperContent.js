@@ -130,7 +130,7 @@ class PopperContent extends React.Component {
       {
         name: 'offset',
         options: {
-          offset: [offset, offset],
+          offset,
         },
       },
       {
@@ -146,7 +146,6 @@ class PopperContent extends React.Component {
           boundary: boundariesElement,
         },
       },
-      ...modifiers,
     ].filter(m => !modifierNames.includes(m.name));
     const extendedModifiers = [ ...baseModifiers, ...modifiers];
 
